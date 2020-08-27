@@ -1,2 +1,2 @@
 # Open-Source-Project
-Application in Python
+Application in React
