@@ -17,8 +17,6 @@ const Welcome = ({element}) => {
                     </div>
                 </section>
                 <About />
-                <About />
-                <About />
             </main>
     )
 }
