@@ -5,7 +5,7 @@ const Footer = () => (
 
 
  <div className="footer">
-    <p>This is some content in sticky footer</p>
+    Copyrights@2020 Cookery Portal
   </div>
 
 
