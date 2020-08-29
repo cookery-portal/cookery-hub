@@ -5,7 +5,7 @@ const Footer = () => (
 
 
  <div className="footer">
-    Copyrights@2020 Cookery Portal
+    <small>&copy; Copyright 2020, Cookery Portal</small>
   </div>
 
 
