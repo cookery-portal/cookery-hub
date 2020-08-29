@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import './Welcome.css'
 import Logo from '../../assets/images/app_logo.svg'
 import About from './About'
@@ -16,8 +17,6 @@ const Welcome = ({element}) => {
                         </button>
                     </div>
                 </section>
-                <About />
-                <About />
                 <About />
             </main>
     )

@@ -10,7 +10,6 @@ return (
       <h1> Cookery Portal</h1>
     </div>
     <ul className="navbar--link">
-      <li className="navbar--link-item">Home</li>
       <li className="navbar--link-item">About</li>
       <li className="navbar--link-item">Blog</li>
       <li className="navbar--link-item">Login</li>

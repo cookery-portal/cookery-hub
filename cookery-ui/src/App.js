@@ -2,6 +2,7 @@ import React from 'react'
 import useSticky from './hooks/useSticky.js'
 import Welcome from './components/Header/Welcome'
 import Navbar from './components/Header/Navbar'
+import Footer from './components/Footer/footer'
 
 function App() {
     const { isSticky, element } = useSticky()
@@ -9,8 +10,9 @@ function App() {
         <>
             <Navbar sticky={isSticky} />
             <Welcome element={element} />
+            <Footer/>
         </>
-    )
+    );
 }
 
 export default App
