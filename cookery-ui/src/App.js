@@ -3,6 +3,7 @@ import useSticky from './hooks/useSticky.js'
 import Welcome from './components/Header/Welcome'
 import Navbar from './components/Header/Navbar'
 import Footer from './components/Footer/footer'
+import About from './components/Header/About'
 
 function App() {
     const { isSticky, element } = useSticky()
@@ -10,6 +11,7 @@ function App() {
         <>
             <Navbar sticky={isSticky} />
             <Welcome element={element} />
+            <About />
             <Footer/>
         </>
     );
