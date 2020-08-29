@@ -1,6 +1,6 @@
 .welcome {
     background-color: #1f1f1f;
-    background-image:url(assets/images/Recipies-Background.jpg) ;
+    background-image:url(../../assets/images/Recipies-Background.jpg) ;
     background-attachment: fixed;
     background-size: cover;
     line-height: 1.8;

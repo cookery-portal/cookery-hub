@@ -1,11 +1,13 @@
 import React from "react";
+import "./About.css";
 
 const About = () => (
-  <section className="about">
+  <div className="about-root">
+    
     <p className="welcome--about">
       This site is under development. Version one will be launched soon
     </p>
-  </section>
+  </div>
 );
 
 export default About;
