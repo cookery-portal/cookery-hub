@@ -1,7 +1,9 @@
 .welcome {
     background-color: #1f1f1f;
     background-image:url(../../assets/images/Recipies-Background.jpg) ;
-    background-attachment: fixed;
+    background-color: transparent;
+    opacity: 0.9;
+    /*background-attachment: fixed;*/
     background-size: cover;
     line-height: 1.8;
     height: 74vh;
@@ -9,11 +11,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 1;
+    overflow: visible;
+    /* height:75rem; */
   }
   .welcome--logo {
     width: 10rem;
     height: 20vh;
-  }
+  } 
   
   .welcome--about {
     padding: 2rem;
@@ -32,3 +37,5 @@
     border-radius: 20px;
     font-weight: 700;
   }
+
+ 

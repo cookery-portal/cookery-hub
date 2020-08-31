@@ -1,0 +1,26 @@
+.searchbar{
+   
+    background-color: transparent;
+    display: flex;
+    top: 20px;
+}
+.serachbar-input{
+    width: 60vh;
+    height: 5vh;
+    border: 2px solid;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.searchbar-button{
+    width: 10vh;
+    height: 5vh;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
