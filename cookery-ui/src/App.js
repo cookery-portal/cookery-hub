@@ -1,19 +1,25 @@
 import React from 'react'
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
 import useSticky from './hooks/useSticky.js'
 import Welcome from './components/Header/Welcome'
 import Navbar from './components/Header/Navbar'
 import Footer from './components/Footer/footer'
 import About from './components/Header/About'
+// import ParentCard from './components/ParentCard'
 
 function App() {
     const { isSticky, element } = useSticky()
     return (
-        <>
-            <Navbar sticky={isSticky} />
-            <Welcome element={element} />
-            <About />
-            <Footer/>
-        </>
+        <div id='root'>
+          <div class='container-fluid'>
+            <div id='app-nav'> <Navbar sticky={isSticky} /> </div>
+            <div id='app-welcome'> <Welcome element={element} /> </div>
+            {/* <div id='app-card'> <ParentCard /></div> */}
+            <div id='app-about'> <About /></div>
+            <div id='app-footer'> <Footer/></div>
+            </div>
+        </div>
     );
 }
 
