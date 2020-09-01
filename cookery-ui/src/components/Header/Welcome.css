@@ -3,17 +3,18 @@
     background-image:url(../../assets/images/Recipies-Background.jpg) ;
     background-color: transparent;
     opacity: 0.9;
-    /*background-attachment: fixed;*/
-    background-size: cover;
+    background-attachment:absolute;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: 100% 100%;
     line-height: 1.8;
-    height: 74vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 1;
-    overflow: visible;
-    /* height:75rem; */
+    overflow:hidden;
+    height:80rem;
   }
   .welcome--logo {
     width: 10rem;
