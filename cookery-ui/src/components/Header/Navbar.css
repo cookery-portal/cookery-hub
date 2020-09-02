@@ -5,17 +5,17 @@
     position: absolute;
     z-index: 1;
     width: 100%;
-    /* opacity: 0.5;
-    background-color: #1f1f1f; */
+    opacity: 10;
+    background-color: none;
     color: white;
   }
   
   .navbar-sticky {
-    background: #333;
+    background: transparent;
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 1px 1px 1px #222;
+    box-shadow: none;
   }
   
   .navbar--logo-holder {

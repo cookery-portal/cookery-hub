@@ -1,5 +1,6 @@
 import React from 'react'
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from "react-bootstrap";
 
 import useSticky from './hooks/useSticky.js'
 import Welcome from './components/Header/Welcome'
@@ -11,15 +12,23 @@ import About from './components/Header/About'
 function App() {
     const { isSticky, element } = useSticky()
     return (
-        <div id='root'>
-          <div class='container-fluid'>
-            <div id='app-nav'> <Navbar sticky={isSticky} /> </div>
-            <div id='app-welcome'> <Welcome element={element} /> </div>
-            {/* <div id='app-card'> <ParentCard /></div> */}
-            <div id='app-about'> <About /></div>
-            <div id='app-footer'> <Footer/></div>
-            </div>
-        </div>
+      <React.Fragment>
+     <Container fluid>
+        <row>
+        <Navbar sticky={isSticky} /> 
+        </row>
+        <row>
+        <Welcome element={element} />
+        </row>
+        <row>
+        <About />
+        </row>
+        <row>
+        <Footer/>
+        </row>
+      </Container> 
+    </React.Fragment>     
+        
     );
 }
 

@@ -2,7 +2,7 @@
     background-color: #1f1f1f;
     background-image:url(../../assets/images/Recipies-Background.jpg) ;
     background-color: transparent;
-    opacity: 0.9;
+    opacity: 10;
     background-attachment:absolute;
     background-repeat: no-repeat;
     background-size:contain;
@@ -38,5 +38,5 @@
     border-radius: 20px;
     font-weight: 700;
   }
-
+  
  

@@ -6,11 +6,13 @@ import Searchbar from '../common/Searchbar'
 
 const Welcome = ({element}) => {
     return (
+        
             <div id="welcome-root">
                 <div ref={element} className='welcome'>
                     <Searchbar/>
                 </div>
             </div>
+        
     
     )
 }
