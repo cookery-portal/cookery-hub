@@ -12,22 +12,24 @@ import About from './components/Header/About'
 function App() {
     const { isSticky, element } = useSticky()
     return (
-      <React.Fragment>
-     <Container fluid>
-        <row>
-        <Navbar sticky={isSticky} /> 
-        </row>
-        <row>
-        <Welcome element={element} />
-        </row>
-        <row>
-        <About />
-        </row>
-        <row>
-        <Footer/>
-        </row>
-      </Container> 
-    </React.Fragment>     
+        <div classname='Container fluid'>
+          <React.Fragment>
+          <row>
+               <Navbar sticky={isSticky} /> 
+            </row>
+            <row>
+               <Welcome element={element} />
+          </row>
+          </React.Fragment>
+          <React.Fragment>
+            <row>
+                <About />
+            </row>
+            <row>
+                <Footer />
+            </row>
+          </React.Fragment>
+      </div>    
         
     );
 }

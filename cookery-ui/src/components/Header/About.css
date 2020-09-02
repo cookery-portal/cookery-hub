@@ -1,7 +1,8 @@
 .about-root{
+    background-color: darkgray;
     padding-top: 20px;
     z-index: 1;
-    
+    border: black 3px solid;
 }
 
 .about{

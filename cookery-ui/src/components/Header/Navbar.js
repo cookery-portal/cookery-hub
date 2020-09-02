@@ -2,11 +2,12 @@ import React from "react";
 import "./Navbar.css";
 import Logo from "../../assets/images/app_logo.svg";
 
-const Navbar = ({ sticky }) => {
+const Navbar = () => {
 return (
-  <nav className={sticky ? "navbar navbar-sticky" : "navbar"}>
+  <div className='navbar'>
+  <nav className="navbar navbar-sticky">
     <div className="navbar--logo-holder">
-      {sticky ? <img src={Logo} alt="logo" className="navbar--logo" /> : null}
+       <img src={Logo} alt="logo" className="navbar--logo" /> 
       <h1> Cookery Portal</h1>
     </div>
     <ul className="navbar--link">
@@ -15,8 +16,10 @@ return (
       <li className="navbar--link-item">Login</li>
     </ul>
   </nav>
-)};
-export default Navbar;
+  </div>
+  )};
+  export default Navbar;
+
 
 
 
