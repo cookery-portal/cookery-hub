@@ -26,6 +26,15 @@ function App() {
                 <About />
             </row>
             <row>
+                <About />
+            </row>
+            <row>
+                <About />
+            </row>
+            <row>
+                <About />
+            </row>
+            <row>
                 <Footer />
             </row>
           </React.Fragment>

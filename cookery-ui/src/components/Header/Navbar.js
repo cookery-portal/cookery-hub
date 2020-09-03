@@ -4,6 +4,7 @@ import Logo from "../../assets/images/app_logo.svg";
 
 const Navbar = () => {
 return (
+  
   <div className='navbar'>
   <nav className="navbar navbar-sticky">
     <div className="navbar--logo-holder">
@@ -17,6 +18,8 @@ return (
     </ul>
   </nav>
   </div>
+  
+  
   )};
   export default Navbar;
 
