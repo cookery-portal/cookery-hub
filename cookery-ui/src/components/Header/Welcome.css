@@ -1,17 +1,15 @@
+#welcome-root{
+  background-color: black;
+}
 .welcome {
     background-color: #1f1f1f;
-    background-image:url(../../assets/images/Recipies-Background.jpg) ;
+    /* background-image:url(../../assets/images/Recipies-Background.jpg) ; */
     background-color: transparent;
     opacity: 100;
     background-attachment:absolute;
     background-repeat: no-repeat;
-    background-size:contain;
     background-size: 100% 100%;
-    line-height: 1.8;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     z-index: 1;
     overflow:hidden;
     height:100vh;
@@ -38,5 +36,10 @@
     border-radius: 20px;
     font-weight: 700;
   }
-  
+  .sliderimg
+  {
+    width:inherit;
+    opacity: 0.5;
+    height: 90vh;
+  }
  

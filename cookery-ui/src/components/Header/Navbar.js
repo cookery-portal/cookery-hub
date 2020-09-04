@@ -5,16 +5,16 @@ import Logo from "../../assets/images/app_logo.svg";
 const Navbar = () => {
 return (
   
-  <div className='navbar'>
-  <nav className="navbar navbar-sticky">
+  <div className="navbar">
+  <nav className="navbar-sticky">
     <div className="navbar--logo-holder">
        <img src={Logo} alt="logo" className="navbar--logo" /> 
       <h1> Cookery Portal</h1>
     </div>
     <ul className="navbar--link">
-      <li className="navbar--link-item">About</li>
-      <li className="navbar--link-item">Blog</li>
-      <li className="navbar--link-item">Login</li>
+      {/* <li className="navbar--link-item">About</li>
+      <li className="navbar--link-item">Blog</li> */}
+      <li className="navbar--link-item">Sign In</li>
     </ul>
   </nav>
   </div>
