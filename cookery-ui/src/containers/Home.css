@@ -1,0 +1,45 @@
+#welcome-root{
+    background-color: black;
+  }
+  .welcome {
+      background-color: #1f1f1f;
+      /* background-image:url(../../assets/images/Recipies-Background.jpg) ; */
+      background-color: transparent;
+      opacity: 100;
+      background-attachment:absolute;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: flex;
+      z-index: 1;
+      overflow:hidden;
+      height:100vh;
+    }
+    .welcome--logo {
+      width: 10rem;
+      height: 20vh;
+    } 
+    
+    .welcome--about {
+      padding: 2rem;
+      width: 50rem;
+      color: #444;
+      text-align: justify;
+      margin: auto;
+    }
+    
+    .welcome__cta-primary {
+      background: #e74c3c;
+      color: #fff;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: 700;
+    }
+    .sliderimg
+    {
+      width:inherit;
+      opacity: 0.5;
+      height: 90vh;
+    }
+   
