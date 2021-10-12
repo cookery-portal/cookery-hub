@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-alice-carousel": "^1.19.3",
@@ -19,10 +20,12 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.4",
+    "react-tooltip-lite": "^1.12.0",
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^4.4.1"
+    "styled-components": "^4.4.1",
+    "xtypejs": "^0.7.1"
   },
   "scripts": {
     "start": "react-scripts start",

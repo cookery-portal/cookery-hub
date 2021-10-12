@@ -42,4 +42,22 @@
       opacity: 0.5;
       height: 90vh;
     }
+    .footer_root{
+      background-color: white;
+      color:white;
+      
+    }
+    .App_root{
+      background-color: #1f1f1f;
+      color:white;
+    }
+    .Login_form_control{
+      width: 45%;
+    }
+    .Login_root{
+      margin: 0% 0% 0% 30%;
+      width: 30%;
+      height: 50%;
+      
+    }
    

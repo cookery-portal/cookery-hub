@@ -3,6 +3,8 @@ import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signup } from '../actions/auth';
 
+import Background from "../assets/images/login.jpg";
+
 const Signup = ({ signup, isAuthenticated }) => {
     const [accountCreated, setAccountCreated] = useState(false);
     const [formData, setFormData] = useState({
@@ -35,7 +37,8 @@ const Signup = ({ signup, isAuthenticated }) => {
     }
 
     return (
-        <div className='container mt-5'>
+        <div style={{  height: '100vh'  }} style={{ backgroundImage: `url(${Background})` }} >
+        <div className='container mt-5 bg-secondary'>
             <h1>Sign Up</h1>
             <p>Create your Account</p>
             <form onSubmit={e => onSubmit(e)}>
@@ -114,6 +117,7 @@ const Signup = ({ signup, isAuthenticated }) => {
                 Already have an account? <Link to='/login'>Sign In</Link>
             </p>
         </div>
+    </div>
     );
 };
 

@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { login } from '../actions/auth';
+import '../containers/Home.css'
 import axios from 'axios';
-import background from "../assets/images/login.jpg";
+import Background from "../assets/images/login.jpg";
 const Login = ({ login, isAuthenticated }) => {
+  
     const [formData, setFormData] = useState({
         email: '',
         password: '' 
@@ -23,17 +25,27 @@ const Login = ({ login, isAuthenticated }) => {
     if (isAuthenticated) {
         return <Redirect to='/' />
     }
-
+    var sectionStyle = {
+        height:'100vh',
+      };
     return (
-        <div className='container mt-5' style={{ backgroundImage: `url(${background})` }}>
+        <div>
+            <br />
+            <br />
+            <br />
+            <br /> <br />
+           
+        <div style={sectionStyle} className="Login_root">
+            
+        <div className='container mt-5' >
             <h1>Sign In</h1>
             <p>Sign into your Account</p>
             <form onSubmit={e => onSubmit(e)}>
                 <div className='form-group'>
                     <input
-                        className='form-control'
+                        className='Login_form_control'
                         type='email'
-                        placeholder='Email'
+                        placeholder='Email*'
                         name='email'
                         value={email}
                         onChange={e => onChange(e)}
@@ -42,9 +54,9 @@ const Login = ({ login, isAuthenticated }) => {
                 </div>
                 <div className='form-group'>
                     <input
-                        className='form-control'
+                        className='Login_form_control'
                         type='password'
-                        placeholder='Password'
+                        placeholder='Password*'
                         name='password'
                         value={password}
                         onChange={e => onChange(e)}
@@ -62,8 +74,11 @@ const Login = ({ login, isAuthenticated }) => {
                 Forgot your Password? <Link to='/reset'>Reset Password</Link>
             </p>
         </div>
+        </div>
+        </div>
     );
-};
+    
+}
 
 const mapStateToProps = state => ({
     isAuthenticated: state.auth.isAuthenticated

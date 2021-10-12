@@ -10,9 +10,10 @@ const Layout = ({ checkAuthenticated, load_user, children }) => {
     }, []);
 
     return (
-        <div>
+        <div class="bg-dark">
             <Navbar />
             {children}
+            
         </div>
     );
 };
