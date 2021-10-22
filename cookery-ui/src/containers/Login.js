@@ -29,7 +29,7 @@ const Login = ({ login, isAuthenticated }) => {
         height:'100vh',
       };
     return (
-        <div>
+        <div className='Backdrp'>
             <br />
             <br />
             <br />
@@ -37,7 +37,7 @@ const Login = ({ login, isAuthenticated }) => {
            
         <div style={sectionStyle} className="Login_root">
             
-        <div className='container mt-5' >
+        <div className='container mt-5 bg-secondary' >
             <h1>Sign In</h1>
             <p>Sign into your Account</p>
             <form onSubmit={e => onSubmit(e)}>
