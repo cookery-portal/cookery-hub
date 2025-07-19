@@ -18,8 +18,8 @@ __pycache__/
 *.pyc
 *.sqlite3
 *.db
-.flaskenv # You're using this for env vars, but it's often good to explicitly ignore if it contains sensitive data
-.python-version # Consider committing this if all team members use pyenv for this project, otherwise ignore. Default to ignore if unsure.
+.flaskenv
+.python-version
 
 # Editor and OS specific files (Common)
 .idea/
