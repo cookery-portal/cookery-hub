@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './HomePage.css'; // Import the CSS file
+import chefFavicon from './assets/chef-logo-favicon.png';
 
 const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -32,9 +33,13 @@ function HomePage() {
           onChange={handleSearch}
         />
         <button type="submit" className="search-button" aria-label="Search">
-          {/* SVG search icon */}
+          <img
+            src={chefFavicon}
+            alt="Chef Favicon"
+            className="search-logo"
+          />
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none"
-               stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="11" cy="11" r="8"></circle>
             <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
           </svg>

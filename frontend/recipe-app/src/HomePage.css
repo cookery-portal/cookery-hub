@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   min-height: 80vh;
+  padding-top: 80px;
 }
 
 .welcome-text {
@@ -52,6 +53,17 @@
   display: flex;
   align-items: center;
 }
+
+.search-logo {
+  height: 33px;
+  width: 33px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  border-radius: 50%;       /* Make it round */
+  object-fit: cover;        /* Ensure it covers the frame nicely */
+  display: inline-block;
+}
+
 
 .search-button:hover,
 .search-button:focus {
