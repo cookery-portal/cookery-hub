@@ -1,0 +1,151 @@
+.add-recipe-outer {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-recipe-form {
+  background: rgba(255, 255, 255, 0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(255, 183, 77, 0.18);
+  /* warm, soft shadow */
+  max-width: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.add-recipe-form h2 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.add-recipe-form input,
+.add-recipe-form textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(44, 83, 100, 0.06);
+}
+
+.add-recipe-form input:focus,
+.add-recipe-form textarea:focus {
+  outline: 2px solid #21cbf3;
+  background: #fff;
+}
+
+.add-recipe-form textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+
+.section-label {
+  font-weight: 700;
+  color: #21cbf3;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  align-self: flex-start;
+}
+
+.ingredient-row,
+.step-row {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+/* Soft peach for Add Ingredient button */
+.add-btn {
+  background: #ffbfae;
+  color: #222;
+  border: none;
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(255, 191, 174, 0.12);
+}
+
+.add-btn:hover {
+  background: #ff8a65;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.remove-btn {
+  background: #ff5252;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.2rem;
+  transition: background 0.2s;
+}
+
+.remove-btn:hover {
+  background: #d32f2f;
+}
+
+/* Soft peach for Submit Recipe button */
+.submit-btn {
+  background: #ffbfae;
+  color: #222;
+  border: none;
+  border-radius: 999px;
+  padding: 0.7rem 2.2rem;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-top: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(255, 191, 174, 0.12);
+}
+
+.submit-btn:hover {
+  background: #ff8a65;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.form-error {
+  color: #ff5252;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-label {
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.2rem;
+  align-self: flex-start;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  padding-left: 2px;
+}
+
+.form-success {
+  color: #43e97b;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}

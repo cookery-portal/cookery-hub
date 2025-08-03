@@ -8,6 +8,9 @@ function Header() {
       <Link to="/">
         <img src={logo} alt="App Logo" className="app-logo" />
       </Link>
+      <div className="header-actions">
+        <Link to="/add-recipe" className="add-recipe-btn">Add Recipe</Link>
+      </div>
     </header>
   );
 }

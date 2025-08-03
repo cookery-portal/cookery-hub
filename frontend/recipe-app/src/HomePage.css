@@ -69,3 +69,54 @@
 .search-button:focus {
   background: rgba(255,255,255,0.15);
 }
+
+.recipe-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.recipe-tile {
+  background: rgba(255,255,255,0.08);
+  color: #f8fafc;
+  border-radius: 12px;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+  min-width: 180px;
+  text-align: center;
+}
+
+.recipe-tile:hover {
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.pagination-controls button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #2c5364;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.pagination-controls button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}

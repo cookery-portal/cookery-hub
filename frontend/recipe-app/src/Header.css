@@ -3,25 +3,66 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 64px;
+  height: 136px; /* 80px logo + 32px margin-top */
   background: transparent;
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between;
   z-index: 100;
-  padding-left: 2rem;
+  overflow: visible;
+  padding: 0 2rem;
 }
 
 .app-logo {
-  height: 80px;           /* Increase from 48px to make it bigger */
-  width: 80px;            /* Set width equal to height for a square */
-  border-radius: 50%;     /* Makes the logo perfectly round (circle) */
-  object-fit: cover;      /* Makes sure image fills the container nicely */
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
   cursor: pointer;
   transition: transform 0.3s ease;
-  margin-top: 60px; /* Adjust margin to align with the header */
 }
 
-/* Optional: add a subtle hover effect */
 .app-logo:hover {
   transform: scale(1.1);
+}
+
+.header-actions {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.add-recipe-btn {
+  background: linear-gradient(90deg, #2196f3 0%, #21cbf3 100%);
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(67,233,123,0.15);
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+  margin-left: 1rem;
+  margin-right: 3rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
+
+.add-recipe-btn:hover,
+.add-recipe-btn:focus {
+  background: linear-gradient(90deg, #21cbf3 0%, #2196f3 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.app-logo,
+.add-recipe-btn {
+  margin-top: 32px;
+}
+
+.main-content {
+  padding-top: 140px; /* Slightly more than header height */
 }
