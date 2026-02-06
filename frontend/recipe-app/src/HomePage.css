@@ -13,17 +13,28 @@
   width: 100vw;
   z-index: 20;
   background: rgba(36, 36, 36, 0.98);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0; /* Removed padding */
   box-shadow: 0 2px 8px rgba(44,83,100,0.08);
+  min-height: 170px; /* Ultra-aggressively reduced from 200px */
 }
 
-.welcome-text {
-  margin-bottom: 2rem;
+.main-heading {
+  margin-bottom: 0; /* Removed margin */
   text-align: center;
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-size: 3rem;
+  font-weight: 800;
   color: #f8fafc;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
+  padding-top: 0.5rem; /* Ultra-reduced from 1rem */
+}
+
+.caption-text {
+  margin-bottom: 0.5rem; /* Ultra-reduced from 1rem */
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #cbd5e1;
+  letter-spacing: 0.5px;
 }
 
 .search-bar-fixed {
@@ -37,7 +48,8 @@
   border-radius: 999px;
   padding: 0.5rem 1.2rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  margin-top: 1rem;
+  margin-top: 0.25rem; /* Ultra-reduced from 0.5rem */
+  margin-bottom: 0.25rem; /* Ultra-reduced from 0.5rem */
   width: 100%;
   max-width: 600px;
   margin-left: auto;
@@ -94,12 +106,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 8.5rem; /* Adjust this value to match the total height of your header */
+  margin-top: 170px; /* Ultra-aggressively reduced from 200px */
 }
 
 .recipes-scroll-area {
   flex: 1;
-  padding: 2rem 0;
+  padding: 0 0 2rem 0; /* Zero top padding for tightest spacing */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -112,6 +124,7 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
+  margin-top: 0; /* Remove any top margin */
 }
 
 .recipe-tile-header {
@@ -206,10 +219,64 @@
   .recipe-tiles {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .recipes-scroll-area {
+    padding: 0 0 2rem 0; /* Zero top padding for tablet too */
+  }
+  
+  .home-header-container {
+    min-height: 150px; /* Ultra-small header on tablet */
+  }
+  
+  .home-scroll-container {
+    margin-top: 150px; /* Match tablet header height */
+  }
+  
+  .main-heading {
+    font-size: 2.5rem;
+    padding-top: 0.5rem; /* Ultra-reduced */
+  }
+  
+  .caption-text {
+    margin-bottom: 0.5rem; /* Ultra-reduced */
+    font-size: 1.2rem;
+  }
+  
+  .search-form {
+    margin-top: 0.125rem;
+    margin-bottom: 0.125rem;
+  }
 }
 
 @media (max-width: 600px) {
   .recipe-tiles {
     grid-template-columns: 1fr;
+  }
+  
+  .recipes-scroll-area {
+    padding: 0 0 2rem 0; /* Zero top padding for mobile too */
+  }
+  
+  .home-header-container {
+    min-height: 130px; /* Ultra-small header on mobile */
+  }
+  
+  .home-scroll-container {
+    margin-top: 130px; /* Match mobile header height */
+  }
+  
+  .main-heading {
+    font-size: 2.2rem; /* Smaller heading on mobile */
+    padding-top: 0.25rem; /* Ultra-minimal */
+  }
+  
+  .caption-text {
+    margin-bottom: 0.25rem; /* Ultra-minimal */
+    font-size: 1.1rem;
+  }
+  
+  .search-form {
+    margin-top: 0.125rem; /* Ultra-minimal */
+    margin-bottom: 0.125rem; /* Ultra-minimal */
   }
 }

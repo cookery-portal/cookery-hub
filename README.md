@@ -5,4 +5,4 @@ This Application is hub for food stories, recipes, food hacks/tips etc..
 
 
 ### Local PDF file Size reduce
-gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dPDFSETTINGS=/ebook -sOutputFile=abhibirth.pdf input.pdf
+gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -dPDFSETTINGS=/ebook -sOutputFile=merged-I797-visa-r.pdf input.pdf

@@ -1,0 +1,365 @@
+:root {
+  --header-h: 180px;  /* Increased height for more space */
+}
+
+.recipe-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  overflow: visible;
+  padding-top: var(--header-h); /* push content below fixed header */
+}
+
+/* Container 1: Fixed Header with App Logo + Recipe Name */
+.recipe-header-container {
+  position: fixed;
+  inset: 0 0 auto 0;
+  height: var(--header-h);
+  z-index: 30;
+  background: rgba(36, 36, 36, 0.98);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  /* Future: background-image will go here */
+}
+
+.recipe-header-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; /* Stack app logo and recipe name vertically */
+  height: 100%;
+  justify-content: flex-start; /* Start from top instead of center */
+  align-items: flex-start; /* Left align content */
+  gap: 2rem; /* Increased gap to push recipe name further down */
+  padding-top: 1rem; /* Add top padding */
+}
+
+/* App Logo Section (Top) */
+.app-logo-section {
+  display: flex;
+  align-items: center;
+  height: 80px; /* Increased height for logo area */
+  /* Future: App logo will be placed here */
+}
+
+/* Recipe Name Section (Below app logo) - No description */
+.recipe-name-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+  margin-top: 1rem; /* Additional margin to push further down */
+}
+
+.recipe-main-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #f8fafc;
+  margin: 0; /* Remove bottom margin since no subtitle */
+  line-height: 1.2;
+}
+
+/* Container 2: Scrollable Page Content */
+.recipe-scroll-container {
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.recipe-content-area {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem; /* Zero top padding - Tightest possible spacing */
+}
+
+.recipe-columns {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Left (cooking steps) bigger, right (story+ingredients) smaller */
+  gap: 2.25rem;
+  min-height: 60vh;
+  margin-top: 0; /* Keep this at 0 for tight spacing */
+}
+
+/* Left Side - Cooking Steps (BIGGER) */
+.recipe-cooking-container { 
+  display: flex; 
+  flex-direction: column; 
+}
+
+/* Right Side - Recipe Story + Ingredients (SMALLER) */
+.recipe-story-ingredients-container { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.5rem; 
+}
+
+.recipe-story-container { 
+  display: flex; 
+  flex-direction: column; 
+}
+
+.recipe-story-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.25rem; /* Slightly reduced padding for smaller size */
+  box-shadow: 0 4px 20px rgba(44,83,100,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: fit-content;
+}
+
+.story-title {
+  font-size: 1.4rem; /* Slightly smaller title */
+  font-weight: 700;
+  color: #ffe29f;
+  margin: 0 0 0.75rem 0; /* Reduced margin */
+}
+
+/* Description styling in recipe story */
+.recipe-description {
+  color: #ffe29f !important; /* Highlighted color for description */
+  font-size: 1rem !important; /* Slightly smaller */
+  font-weight: 600 !important;
+  font-style: italic;
+  margin-bottom: 1.25rem !important; /* Reduced margin */
+  padding-bottom: 0.75rem; /* Reduced padding */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.story-content p {
+  color: #f8fafc;
+  font-size: 1rem; /* Slightly smaller */
+  line-height: 1.6; /* Slightly tighter */
+  margin-bottom: 1rem; /* Reduced margin */
+}
+
+.recipe-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem; /* Reduced gap */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.75rem; /* Reduced padding */
+}
+
+.meta-item { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.meta-label { 
+  color: #cbd5e1; 
+  font-weight: 500;
+  font-size: 0.9rem; /* Slightly smaller */
+}
+
+.meta-value {
+  color: #f8fafc; 
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.5rem; /* Reduced padding */
+  border-radius: 10px; /* Slightly smaller radius */
+  font-size: 0.85rem; /* Smaller font */
+}
+
+/* Ingredients styling (smaller) */
+.ingredients-box, .instructions-box {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem; /* Keep normal padding for cooking steps */
+  box-shadow: 0 4px 20px rgba(44,83,100,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Smaller ingredients box */
+.recipe-story-ingredients-container .ingredients-box {
+  padding: 1.25rem; /* Reduced padding for ingredients in smaller section */
+}
+
+.ingredients-title {
+  font-size: 1.15rem; /* Slightly smaller than instructions title */
+  font-weight: 700;
+  color: #ffe29f;
+  margin: 0 0 0.75rem 0; /* Reduced margin */
+}
+
+.instructions-title {
+  font-size: 1.4rem; /* Bigger title for cooking steps */
+  font-weight: 700;
+  color: #ffe29f;
+  margin: 0 0 1.25rem 0; /* More margin */
+}
+
+.ingredients-list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.5rem; /* Reduced gap */
+}
+
+.ingredient-item {
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem; /* Reduced gap */
+  padding: 0.4rem 0; /* Reduced padding */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ingredient-item:last-child { 
+  border-bottom: none; 
+}
+
+.ingredient-bullet { 
+  width: 5px; /* Slightly smaller bullet */
+  height: 5px; 
+  border-radius: 50%; 
+  background: #ffe29f; 
+  flex-shrink: 0; 
+}
+
+.ingredient-text { 
+  color: #f8fafc; 
+  font-size: 0.95rem; /* Slightly smaller text */
+  line-height: 1.3; 
+}
+
+/* Cooking steps styling (bigger) */
+.cooking-steps { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1rem; 
+}
+
+.step-placeholder { 
+  color: #cbd5e1; 
+  font-style: italic; 
+  text-align: center; 
+  padding: 2rem 0; /* More padding for bigger section */
+  font-size: 1.1rem; /* Bigger text */
+}
+
+.step-note { 
+  font-size: 1rem; /* Bigger note text */
+  margin-top: 0.75rem; 
+  opacity: 0.8; 
+}
+
+.instructions-list { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 1rem; 
+}
+
+.instruction-item { 
+  display: flex; 
+  gap: 0.75rem; 
+  align-items: flex-start; 
+}
+
+.instruction-number {
+  width: 26px; 
+  height: 26px; 
+  border-radius: 50%;
+  background: #ffe29f; 
+  color: #1a1a1a; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  font-weight: 700; 
+  font-size: 0.85rem; 
+  flex-shrink: 0; 
+  margin-top: 0.05rem;
+}
+
+.instruction-text { 
+  color: #f8fafc; 
+  font-size: 1rem; 
+  line-height: 1.5; 
+}
+
+.no-ingredients, .no-instructions { 
+  color: #cbd5e1; 
+  font-style: italic; 
+  text-align: center; 
+  padding: 1.5rem 0; 
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  :root {
+    --header-h: 160px; /* Adjusted for mobile */
+  }
+  
+  .recipe-columns { 
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 1.5rem; 
+  }
+  
+  .recipe-main-title { 
+    font-size: 2rem; 
+  }
+  
+  .recipe-header-content { 
+    gap: 1.5rem; /* Smaller gap on mobile */
+    padding-top: 0.5rem;
+  }
+  
+  .recipe-name-content { 
+    margin-top: 0.5rem; 
+  }
+  
+  .recipe-content-area { 
+    padding: 0 1.5rem 2rem 1.5rem; /* Zero top padding for tablet */
+  }
+  
+  /* Reset sizes for mobile */
+  .story-title, .ingredients-title, .instructions-title {
+    font-size: 1.25rem;
+  }
+  
+  .recipe-story-box, .ingredients-box {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --header-h: 140px; /* Even smaller for mobile */
+  }
+  
+  .recipe-content-area { 
+    padding: 0 1rem 2rem 1rem; /* Zero top padding for mobile */
+  }
+  
+  .recipe-main-title { 
+    font-size: 1.8rem; 
+  }
+  
+  .recipe-header-content { 
+    gap: 1rem;
+    align-items: center; /* Center on mobile */
+    text-align: center;
+    padding-top: 0.25rem;
+  }
+  
+  .recipe-name-content { 
+    text-align: center; 
+    margin-top: 0;
+  }
+  
+  .step-placeholder {
+    padding: 1.5rem 0;
+    font-size: 1rem;
+  }
+}
+
+/* Loading/Error */
+.loading, .error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  color: #f8fafc;
+  font-size: 1.2rem;
+}

@@ -7,7 +7,6 @@ import chefFavicon from './assets/chef-logo-favicon.png';
 const apiUrl = import.meta.env.VITE_API_URL;
 
 function HomePage() {
-  const [welcome, setWelcome] = useState('');
   const [search, setSearch] = useState('');
   const [recipes, setRecipes] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -15,13 +14,6 @@ function HomePage() {
   const [page, setPage] = useState(1);
   const perPage = 9;
   const [total, setTotal] = useState(0);
-
-  // Fetch welcome message from the API
-  useEffect(() => {
-    axios.get(`${apiUrl}/`)
-      .then(res => setWelcome(res.data || res))
-      .catch(() => setWelcome('Welcome!'));
-  }, []);
 
   // Fetch recipes (search or all, paginated)
   useEffect(() => {
@@ -64,9 +56,8 @@ function HomePage() {
   return (
   <div className="home-root">
     <div className="home-header-container">
-      <h2 className="welcome-text">
-        {typeof welcome === 'string' ? welcome : 'Welcome to Cookery Portal'}
-      </h2>
+      <h1 className="main-heading">Cookery Portal</h1>
+      <p className="caption-text">Find, Cook & Enjoy</p>
       <div className="search-bar-fixed">
         <form className="search-form" onSubmit={e => e.preventDefault()}>
           <input
